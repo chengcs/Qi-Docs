@@ -21,6 +21,9 @@ AccessRights are the bitwise union of all of the access rights they encompass. F
 that Read and Write access is permitted.
 
 *Note*
+  Every ACL must contain an ACE with ``AccessType`` set to ``Allowed`` and ``AccessRights`` with at least ManageAccessControl access.
+  
+*Note*
   If an operation requires more than one access right then an identity can obtain 
   those rights from multiple ACL entries.
 	
@@ -120,8 +123,8 @@ Owner objects on OCS entities are used to grant access for all operations on the
 entity's AccessControlList's AccessControlEntries. 
 
 *Note*
-  Currently, only Users and Applications are valid owners for entities.  
-
+  Currently, only Users and Applications are valid owners for entities.
+  
 The following code samples shows the format and structure of an owner object:
 
 .. _TrusteeObj: 
