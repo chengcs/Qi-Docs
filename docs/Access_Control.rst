@@ -21,11 +21,10 @@ AccessRights are the bitwise union of all of the access rights they encompass. F
 that Read and Write access is permitted.
 
 *Note*
-  Every ACL must contain an ACE with ``AccessType`` set to ``Allowed`` and ``AccessRights`` with at least ManageAccessControl access.
+  Every ACL must contain an ACE with ``AccessType`` set to ``Allowed`` and ``AccessRights`` with at least ``ManageAccessControl`` access.
   
 *Note*
-  If an operation requires more than one access right then an identity can obtain 
-  those rights from multiple ACL entries.
+  If an operation requires more than one access right then an identity can obtain those rights from multiple ACL entries.
 	
 *Note*
   ``AccessType.Denied`` takes precedence over ``AccessType.Allowed``. For example, a role that is assigned ``AccessType.Denied`` for
